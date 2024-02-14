@@ -1,1 +1,64 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
+/* New Color Palette:
+* Lightest (Main Background): #f2fbf2
+* Dark Green (Primary): #005a00
+* Light Green (Secondary): #72b372
+* Reddish-Brown (Accent): #b75858
+*/
+
+.bg-info {
+    background-color: #e9c9f8 !important; /* Light green for secondary backgrounds */
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: white; /* Dark green for brand name & nav links for visibility */
+}
+
+#navigation, a .navbar-brand .nav-item {
+    font-family: 'Lato', cursive; /*change the font name for what you have*/
+    font-size: 1rem;
+    color: white;
+}
+
+.btn-info {
+    color: white; /* Lightest shade for text on info button for contrast */
+    background-color: #e1c9f8; /* Light green for button background */
+    border-color: #988dae; /* Dark green for button border */
+}
+
+.btn-primary {
+    color: #f2fbf2; /* Lightest shade for text */
+    font-size: 150%;
+    background-color: #e1c9f8; /* Dark green for primary button background */
+    border-color: #8d95ae; /* Reddish-brown for border to use as accent */
+    border-width: thick;
+}
+
+/* Style for radio button labels when not selected */
+.btn-outline-primary {
+    color: #e9c9f8; /* Dark green text color for contrast */
+    border-color: #e9c9f8; /* Light green border color */
+}
+
+/* Style for radio button labels on hover or focus */
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    color: #f2fbf2; /* Lightest color for text */
+    background-color: #c9d4f8; /* Light green background */
+    border-color: #e9c9f8; /* Dark green border for emphasis */
+}
+
+/* Style for the active (checked) radio button label */
+.btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary {
+    color: #f2fbf2; /* Lightest color for text */
+    background-color: #e1c9f8; /* Dark green background for primary action */
+    border-color: #e1c9f8; /* Reddish-brown border to use as accent */
+}
+
+body {
+    background-color: #f8f0ff; /* Lightest shade for body background to follow the 60% rule */
+}
